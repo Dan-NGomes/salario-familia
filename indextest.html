@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SALARIO FAMILIA TEST</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div id="pagina">
+    <div id="imagem">
+        <img src="images/salario-familia.jpg" alt="">
+     </div>
+    <div id="formulario">
+        <form id="calculoForm">
+            <!-- NOME -->
+            <label for="nomeDeUsuario">Empregado</label>
+            <input required type="text" id="nomeDeUsuario">
+    
+            <!-- QUANTIDADE DE FILHOS MENORES -->
+            <label for="filhosMenores">Quantidade de filhos Menores</label>
+            <input required type="number" id="filhosMenores">
+    
+            <!-- SALÁRIO DE CONTRIBUIÇÃO -->
+            <label for="salarioContribuicao">Salário Contribuição</label>
+            <input required type="number" id="salarioContribuicao">
+    
+            <!-- BOTÃO PARA CALCULAR -->
+            <button type="button" onclick="calcularContribuicao()">CALCULAR</button>
+    
+            <!-- Local para exibir o resultado -->
+            <p id="resultado"></p>
+        </form>
+    </div>
+    <table>
+        <tr>
+            <th>Salário-Contribuição</th>
+            <th>Cota do Salário Família</th>
+        </tr>
+        <tr>
+            <th>Até R$ 806,80</th>
+            <th>R$ 41,37 por filho</th>
+        </tr>
+        <tr>
+            <th>Entre R$ 806,81 e R$ 1.212,64</th>
+            <th>R$ 29,16 por filho</th>
+        </tr>
+        <tr>
+            <th>Mais de R$ 1.212,64</th>
+            <th>Não há</th>
+        </tr>
+        </table>
+
+        <footer>Todos os direitos reservados ao Programa Salário Familia!</footer>
+    
+    <script src="script/script.js"></script>
+
+</div>
+</body>
+</html>
